@@ -1,0 +1,58 @@
+{
+  "app": {
+    "title": "FarmGuard"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "scan": "Verify Product",
+    "cropAnalysis": "Crop Health AI",
+    "soilHealth": "Soil Dashboard",
+    "reportFake": "Report Counterfeit"
+  },
+  "login": {
+    "welcome": "Welcome Back",
+    "subtitle": "Log in to manage your farm",
+    "phone": "Phone Number",
+    "password": "Password",
+    "signIn": "Sign In",
+    "newAccount": "New to FarmGuard?",
+    "createAccount": "Create an account"
+  },
+  "signup": {
+    "title": "Create Profile",
+    "subtitle": "Verify your identity with Aadhaar & Mobile",
+    "aadhaar": "Aadhaar Number",
+    "secure": "Your data is securely encrypted",
+    "sendOtp": "Send OTP",
+    "hasAccount": "Already registered?",
+    "loginInstead": "Log in instead"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}",
+    "quickActions": "Quick Actions",
+    "scanDesc": "Scan QR codes on seeds, fertilizers, and pesticides to check authenticity instantly.",
+    "cropDesc": "Upload photos of your crop leaves to detect diseases and get instant remedies.",
+    "soilDesc": "View historical yield data, soil metrics, and personalized fertilizer recommendations.",
+    "reportDesc": "Submit evidence of fake products directly to the agricultural inspection authorities.",
+    "alerts": "Alerts",
+    "new": "New",
+    "caughtUp": "You're all caught up!",
+    "recentStats": "Recent Farm Stats",
+    "seasonsLogged": "Seasons Logged",
+    "totalCrop": "Total {{cropType}}",
+    "viewHistory": "View detailed history",
+    "didYouKnow": "Did you know?",
+    "promoText": "Scanning all inputs before use guarantees subsidy eligibility and protects your soil from heavy metal contamination found in fake fertilizers.",
+    "completeProfile": "Complete your profile to unlock region features"
+  },
+  "chatbot": {
+    "header": "KrishiBot",
+    "status": "Online",
+    "initialGreeting": "Hello! I am KrishiBot, your cosmic farming assistant. 🌾 I can help you with crop advice, pest management, and soil health. How can I assist your farm today?",
+    "inputPlaceholder": "Ask KrishiBot about farming...",
+    "poweredBy": "KrishiBot v4.2 Antigravity Edition",
+    "error": "Error: Transmission failed. The void is deep. Please try again later.",
+    "unsupported": "Your browser doesn't support cosmic voice transmission."
+  }
+}
