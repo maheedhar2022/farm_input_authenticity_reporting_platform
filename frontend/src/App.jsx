@@ -67,8 +67,6 @@ const AppLayout = ({ children }) => {
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 pb-20">
         {children}
       </main>
-      
-      <KrishiBot />
     </div>
   );
 };
@@ -98,6 +96,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
+        <KrishiBot />
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Navigate to="/login" />} />

@@ -30,6 +30,11 @@ const chatWithKrishi = asyncHandler(async (req, res) => {
   const userPreferredLang = language || 'English';
   const lastUserMessage = messages[messages.length - 1].text;
 
+  console.log('API Keys Check:', {
+    HF_TOKEN: process.env.HF_TOKEN ? 'Present' : 'Missing',
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY ? 'Present' : 'Missing'
+  });
+
   // Try Hugging Face (Moonshot) first if token exists
   if (process.env.HF_TOKEN && !process.env.HF_TOKEN.includes('your_')) {
     try {
@@ -82,8 +87,11 @@ const chatWithKrishi = asyncHandler(async (req, res) => {
 
     return success(res, { reply }, 'AI Response generated (Gemini)');
   } catch (err) {
-    console.error('Gemini Fallback Error:', err.message);
-    return error(res, 'Failed to get response from AI. Please check your API keys.', 500);
+    console.error('AI Processing Error:', err.message);
+    if (err.response) {
+      console.error('Error Response Data:', err.response.data);
+    }
+    return error(res, 'Failed to get response from AI. Please check your API keys or quota.', 500);
   }
 });
 
